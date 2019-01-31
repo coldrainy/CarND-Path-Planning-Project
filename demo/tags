@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AMOUNT_OF_ROAD_VISIBLE	src/main.cc	/^int AMOUNT_OF_ROAD_VISIBLE = 40;$/;"	v
+COST_H	src/cost.h	2;"	d
+EFFICIENCY	src/cost.cc	/^const float EFFICIENCY = 0.1;$/;"	v
+FRAMES_PER_SECOND	src/main.cc	/^int FRAMES_PER_SECOND = 4;$/;"	v
+GOAL	src/main.cc	/^vector<int> GOAL = {300, 0};$/;"	v
+L	src/vehicle.h	/^  int L = 1;$/;"	m	class:Vehicle
+LANE_SPEEDS	src/main.cc	/^vector<int> LANE_SPEEDS = {6,7,8,9};$/;"	v
+MAX_ACCEL	src/main.cc	/^int MAX_ACCEL = 2;$/;"	v
+REACH_GOAL	src/cost.cc	/^const float REACH_GOAL = 0.9;$/;"	v
+Road	src/road.cc	/^Road::Road(int speed_limit, double traffic_density, vector<int> lane_speeds) {$/;"	f	class:Road
+Road	src/road.h	/^class Road {$/;"	c
+SPEED_LIMIT	src/main.cc	/^int SPEED_LIMIT = 10;$/;"	v
+TRAFFIC_DENSITY	src/main.cc	/^double TRAFFIC_DENSITY   = 0.15;$/;"	v
+VEHICLE_H	src/vehicle.h	2;"	d
+Vehicle	src/vehicle.cc	/^Vehicle::Vehicle(){}$/;"	f	class:Vehicle
+Vehicle	src/vehicle.cc	/^Vehicle::Vehicle(int lane, float s, float v, float a, string state) {$/;"	f	class:Vehicle
+Vehicle	src/vehicle.h	/^class Vehicle {$/;"	c
+a	src/vehicle.h	/^  float a;$/;"	m	class:Vehicle
+add_ego	src/road.cc	/^void Road::add_ego(int lane_num, int s, vector<int> config_data) {$/;"	f	class:Road
+advance	src/road.cc	/^void Road::advance() {$/;"	f	class:Road
+calculate_cost	src/cost.cc	/^float calculate_cost(const Vehicle & vehicle, const map<int, vector<Vehicle>> & predictions, const vector<Vehicle> & trajectory) {$/;"	f
+camera_center	src/road.h	/^    int camera_center;$/;"	m	class:Road
+choose_next_state	src/vehicle.cc	/^vector<Vehicle> Vehicle::choose_next_state(map<int, vector<Vehicle>> predictions) {$/;"	f	class:Vehicle
+collider	src/vehicle.h	/^  struct collider{$/;"	s	class:Vehicle
+collision	src/vehicle.h	/^    bool collision ; \/\/ is there a collision?$/;"	m	struct:Vehicle::collider
+configure	src/vehicle.cc	/^void Vehicle::configure(vector<int> road_data) {$/;"	f	class:Vehicle
+constant_speed_trajectory	src/vehicle.cc	/^vector<Vehicle> Vehicle::constant_speed_trajectory() {$/;"	f	class:Vehicle
+density	src/road.h	/^    double density;$/;"	m	class:Road
+display	src/road.cc	/^void Road::display(int timestep) {$/;"	f	class:Road
+ego_key	src/road.h	/^  	int ego_key = -1;$/;"	m	class:Road
+ego_rep	src/road.h	/^  	string ego_rep = " *** ";$/;"	m	class:Road
+generate_predictions	src/vehicle.cc	/^vector<Vehicle> Vehicle::generate_predictions(int horizon) {$/;"	f	class:Vehicle
+generate_trajectory	src/vehicle.cc	/^vector<Vehicle> Vehicle::generate_trajectory(string state, map<int, vector<Vehicle>> predictions) {$/;"	f	class:Vehicle
+get_ego	src/road.cc	/^Vehicle Road::get_ego() {$/;"	f	class:Road
+get_helper_data	src/cost.cc	/^map<string, float> get_helper_data(const Vehicle & vehicle, const vector<Vehicle> & trajectory, const map<int, vector<Vehicle>> & predictions) {$/;"	f
+get_kinematics	src/vehicle.cc	/^vector<float> Vehicle::get_kinematics(map<int, vector<Vehicle>> predictions, int lane) {$/;"	f	class:Vehicle
+get_vehicle_ahead	src/vehicle.cc	/^bool Vehicle::get_vehicle_ahead(map<int, vector<Vehicle>> predictions, int lane, Vehicle & rVehicle) {$/;"	f	class:Vehicle
+get_vehicle_behind	src/vehicle.cc	/^bool Vehicle::get_vehicle_behind(map<int, vector<Vehicle>> predictions, int lane, Vehicle & rVehicle) {$/;"	f	class:Vehicle
+goal_distance_cost	src/cost.cc	/^float goal_distance_cost(const Vehicle & vehicle, const vector<Vehicle> & trajectory, const map<int, vector<Vehicle>> & predictions, map<string, float> & data) {$/;"	f
+goal_lane	src/vehicle.h	/^  int goal_lane;$/;"	m	class:Vehicle
+goal_s	src/vehicle.h	/^  int goal_s;$/;"	m	class:Vehicle
+increment	src/vehicle.cc	/^void Vehicle::increment(int dt = 1) {$/;"	f	class:Vehicle
+inefficiency_cost	src/cost.cc	/^float inefficiency_cost(const Vehicle & vehicle, const vector<Vehicle> & trajectory, const map<int, vector<Vehicle>> & predictions, map<string, float> & data) {$/;"	f
+keep_lane_trajectory	src/vehicle.cc	/^vector<Vehicle> Vehicle::keep_lane_trajectory(map<int, vector<Vehicle>> predictions) {$/;"	f	class:Vehicle
+lane	src/vehicle.h	/^  int lane;$/;"	m	class:Vehicle
+lane_change_trajectory	src/vehicle.cc	/^vector<Vehicle> Vehicle::lane_change_trajectory(string state, map<int, vector<Vehicle>> predictions) {$/;"	f	class:Vehicle
+lane_direction	src/vehicle.h	/^  map<string, int> lane_direction = {{"PLCL", 1}, {"LCL", 1}, {"LCR", -1}, {"PLCR", -1}};$/;"	m	class:Vehicle
+lane_speed	src/cost.cc	/^float lane_speed(const map<int, vector<Vehicle>> & predictions, int lane) {$/;"	f
+lane_speeds	src/road.h	/^    vector<int> lane_speeds;$/;"	m	class:Road
+lanes_available	src/vehicle.h	/^  int lanes_available;$/;"	m	class:Vehicle
+main	src/main.cc	/^int main() {$/;"	f
+max_acceleration	src/vehicle.h	/^  float max_acceleration;$/;"	m	class:Vehicle
+num_lanes	src/road.h	/^  	int num_lanes;$/;"	m	class:Road
+populate_traffic	src/road.cc	/^void Road::populate_traffic() {$/;"	f	class:Road
+position_at	src/vehicle.cc	/^float Vehicle::position_at(int t) {$/;"	f	class:Vehicle
+preferred_buffer	src/vehicle.h	/^  int preferred_buffer = 6; \/\/ impacts "keep lane" behavior.$/;"	m	class:Vehicle
+prep_lane_change_trajectory	src/vehicle.cc	/^vector<Vehicle> Vehicle::prep_lane_change_trajectory(string state, map<int, vector<Vehicle>> predictions) {$/;"	f	class:Vehicle
+realize_next_state	src/vehicle.cc	/^void Vehicle::realize_next_state(vector<Vehicle> trajectory) {$/;"	f	class:Vehicle
+s	src/vehicle.h	/^  int s;$/;"	m	class:Vehicle
+speed_limit	src/road.h	/^    int speed_limit;$/;"	m	class:Road
+state	src/vehicle.h	/^  string state;$/;"	m	class:Vehicle
+successor_states	src/vehicle.cc	/^vector<string> Vehicle::successor_states() {$/;"	f	class:Vehicle
+target_speed	src/vehicle.h	/^  float target_speed;$/;"	m	class:Vehicle
+time	src/vehicle.h	/^    int  time; \/\/ time collision happens$/;"	m	struct:Vehicle::collider
+update_width	src/road.h	/^	int update_width = 70;$/;"	m	class:Road
+v	src/vehicle.h	/^  float v;$/;"	m	class:Vehicle
+vehicles	src/road.h	/^    map<int, Vehicle> vehicles;$/;"	m	class:Road
+vehicles_added	src/road.h	/^    int vehicles_added = 0;$/;"	m	class:Road
+~Road	src/road.cc	/^Road::~Road() {}$/;"	f	class:Road
+~Vehicle	src/vehicle.cc	/^Vehicle::~Vehicle() {}$/;"	f	class:Vehicle
