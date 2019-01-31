@@ -12,5 +12,6 @@ In this situation,the final lane is the current lane,and the intended lane is th
 3. Calculate the cost
 There are two factors in the cost function.They are the velocity cost and inlane cost.The velocity cost weighted 30% and the inlane cost weighted 70%.If the final lane velocity and the intended velocity both close to the max reference velocity,the cost is small.If the intended lane and the final lane both in the availible lane,the cost is zero.
 4. Result
+
 ![5.jpg](./result/1.png)
 
