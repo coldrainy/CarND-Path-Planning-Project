@@ -684,7 +684,7 @@ int main() {
             vector<point> best_trajectory;
             //string cur_state = "KL";
             double best_ref_val;
-            for(state:next_state){
+            for(auto state:next_state){
                 double cur_ref_val = ref_val;
                 vector<float> intend_lane_info;
                 vector<float> final_lane_info;
