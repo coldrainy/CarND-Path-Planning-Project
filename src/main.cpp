@@ -711,7 +711,7 @@ int main() {
                 }
             }
             ref_val = best_ref_val;
-            cout<<"final_state:"<<cur_state<<std::endl;
+            std::cout<<"final_state:"<<cur_state<<std::endl;
             for(auto pose:best_trajectory){
                 double x_point = pose.x;
                 double y_point = pose.y;
